@@ -1,0 +1,5 @@
+<nav class="primary">
+  <% if(navItems) { %> <% navItems.forEach(nav => { %>
+  <a href="<%= nav.url%>"><%= nav.label %></a>
+  <% }); %> <% } %>
+</nav>
