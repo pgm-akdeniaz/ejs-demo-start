@@ -79,6 +79,14 @@ export const dinosaurs = [
     description:
       "The Stegosaurus is a large, plant-eating dinosaur. It has a distinctive row of large, bony plates that extend along its back and a long, spiky tail.",
   },
+  {
+    id: 9,
+    name: "Triceratops",
+    slug: "triceratops",
+    image: "dino_09.png",
+    description:
+      "The Triceratops is a quadrupedal plant-eating dinosaur that had a frill of bone at the back of its skull and three prominent horns.tops is a large, plant-eating dinosaur. It has a distinctive row of large, bony plates that extend along its back and a long, spiky tail.",
+  },
 ];
 
 export const navItems = [
