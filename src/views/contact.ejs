@@ -10,10 +10,23 @@
   </head>
   <body>
     <marquee>contact page</marquee>
+    <header>
+      <nav>
+        <% if(navItems) { %>
+        <ul>
+          <% navItems.forEach(nav => { %>
+          <a href="<%= nav.url%>"><%= nav.label %></a>
+          <% }); %>
+        </ul>
+        <% } %>
+      </nav>
+    </header>
     <h1><%= title %></h1>
     <hr />
     <p><%= content %></p>
-    <p><strong>Name: </strong><%= person.firstname %> <%= person.lastname %></p>
+    <p>
+      <strong>Name: </strong><%= person.firstname + " " + person.lastname %>
+    </p>
     <p>
       <strong>Location: </strong><%= person.location.city %>, <%=
       person.location.country %>

@@ -9,6 +9,17 @@
     <title>Mijn eerste EJS applicatie</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <% if(navItems) { %>
+        <ul>
+          <% navItems.forEach(nav => { %>
+          <a href="<%= nav.url%>"><%= nav.label %></a>
+          <% }); %>
+        </ul>
+        <% } %>
+      </nav>
+    </header>
     <h1><%= title %></h1>
     <hr />
     <p><%= content %></p>
